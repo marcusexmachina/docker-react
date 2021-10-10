@@ -7,8 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello, I am testing the react app using
-          volumes! Updates!
+          Features branch
         </p>
         <a
           className="App-link"
