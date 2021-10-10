@@ -1,0 +1,11 @@
+language: generic
+sudo: required
+services: 
+  - docker
+
+before_install:
+  - docker build -t marcus/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run marcus/docker-react npm run test -- --coverage
+  # - docker run -e CI=true marcus/docker-react npm run test
